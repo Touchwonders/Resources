@@ -359,6 +359,45 @@ find . -name '*.md' -type f
 
 Will list any regular file that ends with ".md", again in the current working directory and all its subdirecties. Use `-type d` for directories.
 
+##### wc
+
+`wc` will print out word, line, character and byte count.
+
+```
+cat access.log | grep '11/Dec/2017' | wc -l
+
+```
+will print out the number of lines in `access.log` that contain "11/Dec/2017".
+
+###### Useful arguments:
+
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>description</th>
+</tr>
+<thead>
+<tbody>
+<tr>
+<td>l</td>
+<td>Will print out the number of lines.</td>
+</tr>
+<tr>
+<td>w</td>
+<td>Will print out the number of words.</td>
+</tr>
+<tr>
+<td>m</td>
+<td>Will print out the number of characters.</td>
+</tr>
+<tr>
+<td>c</td>
+<td>Will print out the number of bytes.</td>
+</tr>
+</tbody>
+</table>
+
 ### Networking
 
 ##### curl
